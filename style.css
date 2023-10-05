@@ -1,0 +1,35 @@
+html,body{
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+
+
+ul{
+list-style-type:none;
+display: flex;
+gap: 370px;
+justify-content: center;
+background-color: aqua;
+}
+ul,li,a{
+ margin: 0;
+}
+h1{
+margin: 0;
+}
+
+a{
+ text-decoration: none;
+ font-size: 30px;
+ font-family: 'Pixelify Sans', cursive;
+ color: green;
+}
+
+p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
