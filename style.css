@@ -1,43 +1,133 @@
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+
+
+body{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ display: grid;
+ place-items: center;
+ height: 100vh;
+}
+.chess{
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+  border:15px solid saddlebrown ;
+}
+.chess p{
+ margin: 0;
+}
+.line1 p:nth-child(even){
+ width: 90px;
+ height: 90px;
+ background-color: #fff;
 }
 
-.container{
- width: 700px;
- height: 700px;
- border: 5px solid blue;
-margin: auto;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-}
-
-.tepasi p:first-child{
- width: 100px;
- height: 100px;
- background-color: red;
-}
-.tepasi p:last-child{
-  width: 100px;
-  height: 100px;
-  background-color: green;
+.line1 p:nth-child(odd){
+  width: 90px;
+  height: 90px;
+  background-color: black;
  }
-
- .pasti p:first-child{
-  width: 100px;
-  height: 100px;
-  background-color: blueviolet;
+ .line2 p:nth-child(even){
+  width: 90px;
+  height: 90px;
+  background-color: black;
  }
- .pasti p:last-child{
-   width: 100px;
-   height: 100px;
-   background-color: yellow;
-  }
-
-  .tepasi, .pasti{
-  display: flex;
-  justify-content: space-between;
-  }
  
+ .line2 p:nth-child(odd){
+   width: 90px;
+   height: 90px;
+   background-color: white;
+  }
+
+
+  .line3 p:nth-child(even){
+    width: 90px;
+    height: 90px;
+    background-color: #fff;
+   }
+   
+   .line3 p:nth-child(odd){
+     width: 90px;
+     height: 90px;
+     background-color: black;
+    }
+
+    .line4 p:nth-child(even){
+      width: 90px;
+      height: 90px;
+      background-color: black;
+     }
+     
+     .line4 p:nth-child(odd){
+       width: 90px;
+       height: 90px;
+       background-color: white;
+      }
+
+      .line5 p:nth-child(even){
+        width: 90px;
+        height: 90px;
+        background-color: #fff;
+       }
+       
+       .line5 p:nth-child(odd){
+         width: 90px;
+         height: 90px;
+         background-color: black;
+        }
+    
+        .line6 p:nth-child(even){
+          width: 90px;
+          height: 90px;
+          background-color: black;
+         }
+         
+         .line6 p:nth-child(odd){
+           width: 90px;
+           height: 90px;
+           background-color: white;
+          }
+
+          .line7 p:nth-child(even){
+            width: 90px;
+            height: 90px;
+            background-color: #fff;
+           }
+           
+           .line7 p:nth-child(odd){
+             width: 90px;
+             height: 90px;
+             background-color: black;
+            }
+
+            .line8 p:nth-child(even){
+              width: 90px;
+              height: 90px;
+              background-color: black;
+             }
+             
+             .line8 p:nth-child(odd){
+               width: 90px;
+               height: 90px;
+               background-color: white;
+              } 
+
+
+
+
+/* .item1 { grid-area: header;}
+.item2 { grid-area: menu; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header right right footer footer'
+    'menu menu right right footer footer'
+    ;
+padding: 0 120px;
+row-gap: 22px;
+
+} */
+
