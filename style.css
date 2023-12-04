@@ -1,17 +1,13 @@
-
-
-
-
-.item1 { grid-area: header;}
-.item2 { grid-area: menu; }
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; }
+.item1 { grid-area: img1;}
+.item2 { grid-area: img2; }
+.item4 { grid-area: img3; }
+.item5 { grid-area: img4; }
 
 .grid-container {
   display: grid;
   grid-template-areas:
-    'header header right right footer footer'
-    'menu menu right right footer footer'
+    'img1 img1 img3 img3 img4 img4'
+    'img2 img2 img3 img3 img4 img4'
     ;
 padding: 0 120px;
 row-gap: 22px;
