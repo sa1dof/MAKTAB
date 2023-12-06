@@ -1,28 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/dist/boxicons.js"
-    integrity="sha512-kWH92pHUC/rcjpSMu19lT+H6TlZwZCAftg9AuSw+AVYSdEKSlXXB8o6g12mg5f+Pj5xO40A7ju2ot/VdodCthw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-
-  <div class="grid-container">
-    <div class="item1"><img src="./img/img1.png" alt=""></div>
-    <div class="item2"><img src="./img/img2.png" alt=""></div>
-    <div class="item4"><img src="./img/img3.png" alt=""></div>
-    <div class="item5"><img src="./img/img4.png" alt=""></div>
+  <div class="quiz-container">
+    <div id="question-container" class="question"></div>
+    <div id="answer-buttons" class="btn-grid"></div>
+    <div id="result" class="result"></div>
+    <button id="next-btn" class="next-btn">Next</button>
   </div>
+
+  <script src="app.js"></script>
   
-
 </body>
-
 </html>
