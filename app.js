@@ -12,8 +12,8 @@ const quizData = [
   {
       question: `Qaysi qatorda css fayli external uslubida tog'ri ulangan`,
       answers: [
-          '<style src="style.css">',
-          '<link rel="stylesheet" href="style.css">',
+          "<style src='style.css'>",
+          "<link rel='stylesheet' href='style.css'>",
           "<stylesheet>style.css</stylesheet>",
           "style.css",
       ],
