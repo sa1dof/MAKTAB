@@ -1,25 +1,25 @@
 const quizData = [
-    {
-        question: `Qaysi qatorda css fayli external uslubida tog'ri ulangan`,
-        answers: [
-            '<style src="style.css">',
-            '<link rel="stylesheet" href="style.css">',
-            "<stylesheet>style.css</stylesheet>",
-            "style.css",
-        ],
-        correct: '<link rel="stylesheet" href="style.css">',
-    },
-    {
-        question: `Qaysi qatorda CSS syntax tog'ri yozilgan`,
-        answers: ["{h1}color:yellow", "{h1;color:yellow}", "h1:color=yellow", "h1{color: yellow;}"],
-        correct: "h1{color: yellow;}",
-    },
-    {
-        question: ` Raqamlangan ro‘yxatni yaratish uchun qaysi tegdan foydalanish mumkin?`,
-        answers: ["ul", "li", "ol", "bilmadim😑"],
-        correct: "ol",
-    },
-    {
+  {
+      question: `Qaysi qatorda CSS syntax tog'ri yozilgan`,
+      answers: ["{h1}color:yellow", "{h1;color:yellow}", "h1:color=yellow", "h1{color: yellow;}"],
+      correct: "h1{color: yellow;}",
+  },
+  {
+    question: ` Raqamlangan ro‘yxatni yaratish uchun qaysi tegdan foydalanish mumkin?`,
+    answers: ["ul", "li", "ol", "bilmadim😑"],
+    correct: "ol",
+  },
+  {
+      question: `Qaysi qatorda css fayli external uslubida tog'ri ulangan`,
+      answers: [
+          '<style src="style.css">',
+          '<link rel="stylesheet" href="style.css">',
+          "<stylesheet>style.css</stylesheet>",
+          "style.css",
+      ],
+      correct: '<link rel="stylesheet" href="style.css">',
+  },
+  {
         question: "Quyidagi selektorlardan qaysi biri yuqori ustuvorlikka ega?",
         answers: [
             "#text { color: red; }",
@@ -175,6 +175,7 @@ function startQuiz() {
     const storedName = localStorage.getItem("userName");
     let userName = storedName || prompt("Ismingizni kiriting:");
 
+    showQuestion(quizData[currentQuestionIndex]);
     if (!userName) {
         alert("Ismingizni kiriting, iltimos!");
         startQuiz();
@@ -182,7 +183,6 @@ function startQuiz() {
     }
 
     localStorage.setItem("userName", userName);
-    showQuestion(quizData[currentQuestionIndex]);
 }
 
 function showQuestion(question) {
